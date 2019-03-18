@@ -1,0 +1,8 @@
+<%= simple_form_for @product do |form| %>
+  <%= form.input :collection, label: "Product Collection" %>
+  <%= form.input :title, label: "Product Title" %>
+  <%= form.input :model, label: "Model" %>
+  <%= form.input :designer, label: "Product Designer" %>
+  <%= form.input :year, label: "Design Year" %>
+  <%= form.button :submit %>
+<% end %>
