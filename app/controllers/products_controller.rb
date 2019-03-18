@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(params.require(:product).permit(:collection, :title, :model, :designer, :year))
+    @product = Product.new(params.require(:product).permit(:collection, :title, :designer, :year))
     if @product.save
       redirect_to root_path
     else
