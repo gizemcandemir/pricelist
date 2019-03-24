@@ -15,7 +15,7 @@
 class Product < ApplicationRecord
   validates :collection, presence: true
   validates :title, presence: true
-  validates :model, presence: true
+  # validates :model, presence: true
   validates :designer, presence: true
   validates :year, presence: true
 end
